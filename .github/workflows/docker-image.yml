@@ -21,7 +21,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/inventory-crud:latest .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/inventory-crud:latest inventory-crud
 
       - name: Tag image with commit SHA
         run: |
