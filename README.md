@@ -62,6 +62,7 @@ inventory-crud/
 ```
 
 ## How to Run the Project
+---
 ### Prerequisites
 #### Make sure you have the following installed:
 - Docker Desktop
@@ -72,6 +73,7 @@ inventory-crud/
 docker --version
 docker compose version
 ```
+---
 
 ### 🚀 Run the Application
 From the project root directory:
@@ -84,13 +86,13 @@ The system runs through Nginx:
 ```
 http://localhost
 ```
-
+---
 ## INVENTORY MANAGEMENT API DOCS
 
 1. Base URL: http://localhost
 
 All requests are routed through Nginx. The application and database are not directly exposed.
-
+---
 ### CREATE INVENTORY ITEM
 Endpoint: POST /items
 
@@ -155,6 +157,7 @@ Response (JSON):
 }
 ```
 
+---
 ### DELETE INVENTORY ITEM
 Endpoint:
 DELETE /items/{id}
@@ -171,6 +174,7 @@ Response (JSON):
   "message": "Deleted"
 }
 ```
+---
 ### ENVIRONMENT VARIABLES
 All sensitive configuration is managed via a .env file.
 ```
@@ -183,6 +187,7 @@ DB_USER=admin
 DB_PASSWORD=admin123
 DB_NAME=inventory
 ```
+---
 ### RESETTING THE DATABASE (OPTIONAL)
 Description:
 Completely resets the database and re-runs init.sql.
@@ -196,8 +201,7 @@ This will:
 - Recreate the database
 - Reinitialize tables using init.sql
 
-
-
+---
 ## ✅ Highlights for Evaluation
 
 - Multi-container Docker architecture
@@ -208,5 +212,6 @@ This will:
 - Clean and readable API design
 - Production-style setup
 
+---
 ## Summary
 This project demonstrates how to build a secure, containerized backend system with proper isolation, persistence, and automation  closely resembling real-world production deployments.
