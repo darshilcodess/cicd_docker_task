@@ -212,6 +212,6 @@ This will:
 - Clean and readable API design
 - Production-style setup
 
----
+
 ## Summary
 This project demonstrates how to build a secure, containerized backend system with proper isolation, persistence, and automation  closely resembling real-world production deployments.
